@@ -2,15 +2,24 @@
   margin:0;
   padding:0;
 }
+html{
+  background-color:black;
+}
+body{
+  background-color:black;
+}
 .year{
   display: flex;
   flex-direction:row;
   width:102px;
+  overflow:scroll;
 }
 .month{
   margin:20px;
   display:flex;
   flex-direction:row;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 .day{
   height:15px;
