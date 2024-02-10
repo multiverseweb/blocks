@@ -1,0 +1,21 @@
+*{
+  margin:0;
+  padding:0;
+}
+.year{
+  display: flex;
+  flex-direction:row;
+  width:102px;
+}
+.month{
+  margin:20px;
+  display:flex;
+  flex-direction:row;
+}
+.day{
+  height:15px;
+  width:15px;
+  border-radius:5px;
+  border:1px solid white;
+  background-color:grey;
+}
