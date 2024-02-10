@@ -19,8 +19,6 @@ body{
   display:flex;
   flex-direction:row;
   width:112px;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
 }
 .day{
   height:20px;
