@@ -1,85 +1,613 @@
-*{
-  margin:0;
-  padding:0;
-}
-html{
-  background-color:black;
-}
-body{
-  font-family: consolas;
-  background-color:black;
-  font-size: 0.8rem;
-}
-::-webkit-scrollbar{
-  display: none;
-}
-.y2024{
-  color:white;
-  position: absolute;
-  top:20vh;
-  margin-left: 50%;
-  transform: translate(-50%);
-  font-size: 1rem;
-}
-.year{
-  padding-top: 1rem;
-  margin-top:35vh;
-  display: flex;
-  flex-direction:row;
-  overflow:scroll;
-  background-color: black;
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
-}
-#january{
-  margin-left: 2.5rem;
-}
-.month{
-  margin:5px;
-  display:flex;
-  flex-direction:row;
-}
-.name{
-  color: white;
-  position: sticky;
-  margin-top: -1rem;
-  font-weight: 600;
-}
-.days{
-  margin-top: 5px;
-  position: absolute;
-  padding-left:10px;
-  padding-right: 5px;
-  color: white;
-  line-height: 1.2rem;
-  background-color: black;
-  opacity: 0.7;
-  z-index: 100;
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>blocks</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <p class="y2024">Tejas' Gym Streak - Year 2024</p>
+    <div class="year">
+      <div class="days">Mon<br>Tue<br>Wed<br>Thu<br>Fri<br>Sat<br>Sun</div>
+      <div class="month" id="january">
+        <p class="name">Jan</p>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="null"></div>
+        <div class="null"></div>
+        <div class="null"></div>
+        <div class="null"></div>
+        </div>
+      </div>
 
-}
-.day{
-  height: 15px;
-  width: 15px;
-  margin:2px;
-  border-radius:3px;
-  border:1px solid white;
-  background-color:grey;
-  opacity: 0.5;
-}
-.done{
-  height: 15px;
-  width: 15px;
-  margin:2px;
-  border-radius:3px;
-  border:1px solid yellow;
-  background-color: orange;
-}
-.null{
-  height: 15px;
-  width: 15px;
-  margin:2px;
-  border-radius:3px;
-  border:1px solid black;
-  background-color: grey;
-  opacity: 0.01;
-}
+
+      <div class="month" id="february">
+        <p class="name">Feb</p>
+        <div class="week">
+        <div class="null"></div>
+        <div class="null"></div>
+        <div class="null"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="done"></div>
+        <div class="done"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="done"></div>
+        <div class="day"></div>
+        <div class="done"></div>
+        <div class="done"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="done"></div>
+        <div class="done"></div>
+        <div class="day"></div>
+        <div class="null"></div>
+        <div class="null"></div>
+        <div class="null"></div>
+        </div>
+      </div>
+
+      <div class="month" id="march">
+        <p class="name">Mar</p>
+        <div class="week">
+        <div class="null"></div>
+        <div class="null"></div>
+        <div class="null"></div>
+        <div class="null"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+      </div>
+
+      <div class="month" id="april">
+        <p class="name">Apr</p>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="null"></div>
+        <div class="null"></div>
+        <div class="null"></div>
+        <div class="null"></div>
+        <div class="null"></div>
+        </div>
+      </div>
+
+      <div class="month" id="may">
+        <p class="name">May</p>
+        <div class="week">
+        <div class="null"></div>
+        <div class="null"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="null"></div>
+        <div class="null"></div>
+        </div>
+      </div>
+
+      <div class="month" id="june">
+        <p class="name">Jun</p>
+        <div class="week">
+        <div class="null"></div>
+        <div class="null"></div>
+        <div class="null"></div>
+        <div class="null"></div>
+        <div class="null"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+      </div>
+
+      <div class="month" id="july">
+        <p class="name">Jul</p>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="null"></div>
+        <div class="null"></div>
+        <div class="null"></div>
+        <div class="null"></div>
+        </div>
+      </div>
+
+      <div class="month" id="August">
+        <p class="name">Aug</p>
+        <div class="week">
+        <div class="null"></div>
+        <div class="null"></div>
+        <div class="null"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="null"></div>
+        </div>
+      </div>
+
+      <div class="month" id="September">
+        <p class="name">Sep</p>
+        <div class="week">
+        <div class="null"></div>
+        <div class="null"></div>
+        <div class="null"></div>
+        <div class="null"></div>
+        <div class="null"></div>
+        <div class="null"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+     
+        <div class="week">
+        <div class="day"></div>
+        </div>
+      </div>
+
+      <div class="month" id="october">
+        <p class="name">Oct</p>
+        <div class="week">
+        <div class="null"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="null"></div>
+        <div class="null"></div>
+        <div class="null"></div>
+        </div>
+      </div>
+
+      <div class="month" id="November">
+        <p class="name">Nov</p>
+        <div class="week">
+        <div class="null"></div>
+        <div class="null"></div>
+        <div class="null"></div>
+        <div class="null"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="null"></div>
+        </div>
+      </div>
+
+      <div class="month" id="December">
+        <p class="name">Dec</p>
+        <div class="week">
+        <div class="null"></div>
+        <div class="null"></div>
+        <div class="null"></div>
+        <div class="null"></div>
+        <div class="null"></div>
+        <div class="null"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day" id="sunday"></div>
+        </div>
+        <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  </body>
+</html>
