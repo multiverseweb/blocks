@@ -13,6 +13,10 @@ body{
 ::-webkit-scrollbar{
   display: none;
 }
+::selection{
+  background-color: rgba(0, 255, 255, 0.526);
+  color: black;
+}
 .y2024{
   color:white;
   position: absolute;
@@ -66,19 +70,19 @@ body{
   border-radius:3px;
   border:1px solid white;
   background-color:grey;
-  opacity: 0.5;
+  opacity: 0.4;
 }
+
 .done{
   height: 15px;
   width: 15px;
   margin:2px;
   border-radius:3px;
   border:1px solid yellow;
-<<<<<<< HEAD
   background-image: radial-gradient(rgb(213, 139, 0),orange,yellow);
   box-shadow: 0px 0px 0px rgb(255, 217, 0);
   animation-name: glow2;
-  animation-duration: 3s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   background-image: radial-gradient(orange,orange,yellow);
@@ -94,25 +98,26 @@ body{
   opacity: 0.01;
 }
 #sunday{
-  opacity: 0.8;
-  border:1px solid rgba(0, 234, 255, 0.522);
-  background-image: radial-gradient(cyan,cyan,blue);
-  box-shadow: 0px 0px 0px cyan;
+  opacity: 0.5;
+  border:1px solid rgb(72, 255, 0);
+  background-color: rgba(68, 68, 68, 0.619);
+  /*background-image: radial-gradient(teal,rgb(0, 152, 96),rgb(0, 255, 110));*/
+  box-shadow: 0px 0px 0px rgb(0, 255, 149);
   animation-name: glow;
-  animation-duration: 3s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-delay: 1s;
 }
 @keyframes glow{
   0%{
-    box-shadow: 0px 0px 0px cyan;
+    box-shadow: 0px 0px 0px rgb(0, 255, 149);
   }
   50%{
-    box-shadow: 0px 0px 20px cyan;
+    box-shadow: 0px 0px 20px rgb(0, 255, 149);
   }
   100%{
-    box-shadow: 0px 0px 0px cyan;
+    box-shadow: 0px 0px 0px rgb(0, 255, 149);
   }
 }
 @keyframes glow2{
@@ -124,5 +129,109 @@ body{
   }
   100%{
     box-shadow: 0px 0px 0px rgb(255, 217, 0);
+  }
+}
+#today{
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 119, 0, 0.805);
+  box-shadow: 0px 0px 20px rgb(255, 89, 0);
+}
+.infinity{
+  height: 3px;
+  width: 3px;
+  background-color: rgb(0, 255, 255);
+  margin-top: -4px;
+  margin-left: 10px;
+  z-index: 10;
+  animation-name: jump;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function:ease-in-out;
+  box-shadow: 0px 0px 5px rgb(0, 255, 255);
+  border-radius: 1px;
+}
+@keyframes jump{
+  0%{
+    margin-top: -4px;
+  }
+  20%{
+    margin-top: -4px;
+    margin-left: 11px;
+  }
+  30%{
+    margin-top: -10px;
+    margin-left: 16px;
+  }
+  37%{
+    margin-top: -2px;
+    margin-left: 20px;
+  }
+  43%{
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+  54%{
+    margin-top: 9px;
+    margin-left: 16px;
+  }
+  75%{
+    margin-top: 0px;
+    margin-left: 16px;
+  }
+  90%{
+    margin-top: -3px;
+    margin-left: 14px;
+  }
+  100%{
+    margin-top: -4px;
+  }
+}
+.case{
+  margin: 1px;
+  background-color: rgba(0, 255, 255, 0);
+  width: 3px;
+  height: 22px;
+  position: absolute;
+  border: 1px solid cyan;
+  top:calc(60vh - 3px);
+  left:30px;
+  color:white;
+  padding-left: 10px;
+}
+.case p{
+  margin-left: -6px;
+  font-size: 4px;
+  rotate: 270deg;
+  margin-top: 11.7px;
+}
+.infinitybar{
+  background-color: cyan;
+  width: 1px;
+  height: 10px;
+  animation-delay: 0.5s;
+  animation-name: bar;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  position: absolute;
+  top:calc(60vh + 10px);
+  left:33px;
+}
+@keyframes bar{
+  0%{
+    height: 2px;
+    top:calc(60vh + 18px);
+  }
+  30%{
+    height: 20px;
+    top:calc(60vh + 0px);
+  }
+  54%{
+    height: 7px;
+    top:calc(60vh + 13px);
+  }
+  100%{
+    height: 5px;
+    top:calc(60vh + 15px);
   }
 }
