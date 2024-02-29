@@ -102,7 +102,7 @@ body{
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-delay: 1.5s;
+  animation-delay: 1.2s;
 }
 @keyframes glow{
   0%{
