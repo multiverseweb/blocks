@@ -44,6 +44,7 @@ body{
   position: sticky;
   margin-top: -1rem;
   font-weight: 600;
+  margin-right: -15px;
 }
 .days{
   margin-top: 5px;
@@ -73,6 +74,13 @@ body{
   margin:2px;
   border-radius:3px;
   border:1px solid yellow;
+<<<<<<< HEAD
+  background-image: radial-gradient(rgb(213, 139, 0),orange,yellow);
+  box-shadow: 0px 0px 20px rgb(255, 217, 0);
+  animation-name: glow2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
   background-image: radial-gradient(orange,orange,yellow);
   box-shadow: 0px 0px 20px rgb(255, 217, 0);
 }
@@ -90,4 +98,31 @@ body{
   border:1px solid rgba(0, 234, 255, 0.522);
   background-image: radial-gradient(cyan,cyan,blue);
   box-shadow: 0px 0px 20px cyan;
+  animation-name: glow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+}
+@keyframes glow{
+  0%{
+    box-shadow: 0px 0px 0px cyan;
+  }
+  50%{
+    box-shadow: 0px 0px 20px cyan;
+  }
+  100%{
+    box-shadow: 0px 0px 0px cyan;
+  }
+}
+@keyframes glow2{
+  0%{
+    box-shadow: 0px 0px 0px rgb(255, 217, 0);
+  }
+  50%{
+    box-shadow: 0px 0px 20px rgb(255, 217, 0);
+  }
+  100%{
+    box-shadow: 0px 0px 0px rgb(255, 217, 0);
+  }
 }
