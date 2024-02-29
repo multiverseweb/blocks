@@ -53,6 +53,7 @@ body{
   color: white;
   line-height: 1.2rem;
   background-color: black;
+  backdrop-filter: blur(6px);
   opacity: 0.7;
   z-index: 100;
 
