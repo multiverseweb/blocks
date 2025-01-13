@@ -17,17 +17,15 @@ body{
   background-color: rgba(0, 255, 255, 0.526);
   color: black;
 }
-.y2024{
+.y{
   color:white;
-  position: absolute;
-  top:20vh;
-  margin-left: 50%;
-  transform: translate(-50%);
+  margin-top: 50px;
+  text-align: center;
   font-size: 1rem;
 }
 .year{
   padding-top: 1rem;
-  margin-top:35vh;
+  margin-top:2vh;
   display: flex;
   flex-direction:row;
   overflow:scroll;
